@@ -83,3 +83,6 @@ tramp
 
 # AUCTeX auto folder
 /auto/
+
+# Vagrant 
+.vagrant
