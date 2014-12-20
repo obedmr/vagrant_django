@@ -5,7 +5,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
  
-  config.vm.box = "packer-archlinux"
+  config.vm.box = "obedmr/archlinux"
  
   # DB Server
   config.vm.define "dbserver" do |db_config|
