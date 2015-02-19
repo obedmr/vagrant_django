@@ -31,4 +31,4 @@ echo "LoadModule wsgi_module modules/mod_wsgi.so" >> /etc/httpd/conf/django.conf
 systemctl start httpd
 
 # Networking
-echo "10.0.0.11     dbserver" >> /etc/hosts
+echo "10.0.0.10     dbserver" >> /etc/hosts
