@@ -17,16 +17,5 @@ mysql -u root -psecure -e "CREATE DATABASE django_sample;"
 mysql -u root -psecure -e "GRANT ALL ON django_sample.* TO 'django_user'@'%' IDENTIFIED BY 'supersecure';"
 
 # Networking
-echo "192.168.0.12     webserver" >> /etc/hosts
+echo "10.0.0.11     webserver" >> /etc/hosts
 
-# Temporal Solution for Networking
-cat >/etc/netctl/vagrant_network <<EOF
-Connection=ethernet
-Description='A basic static ethernet connection'
-Interface=eth1
-IP=static
-Address=('192.168.0.11/24')
-EOF
-
-netctl enable vagrant_network
-netctl start vagrant_network
